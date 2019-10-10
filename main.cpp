@@ -112,7 +112,7 @@ int main()
 	rightLine.setSize(sf::Vector2f(THICKNESS, (WIDTH_HEIGHT - THICKNESS) * sqrt(2)));
 	rightLine.setRotation(45);
 
-	sf::Font font;
+	sf::Font font; 
 	font.loadFromFile("arial.ttf");
 
 	endGameText.setCharacterSize(50);
@@ -123,7 +123,8 @@ int main()
 	endGameText.setOutlineThickness(10);
 	endGameText.setOutlineColor(sf::Color::Black);
 
-	//startMove(gameState);
+	//If you want to start (instead of the computer) comment the line below.
+	startMove(gameState);
 
 
 	while (window.isOpen())
