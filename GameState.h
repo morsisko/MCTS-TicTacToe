@@ -4,6 +4,7 @@
 #include <iostream>
 #include <random>
 #include <algorithm>
+#include <cstring>
 
 
 typedef char player_indicator;

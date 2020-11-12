@@ -22,9 +22,9 @@ GameState startingState;
 Move move;
 std::mutex mutex;
 std::condition_variable cv;
-std::atomic<bool> gameInProgress = true;
-std::atomic<bool> moveFound = false;
-std::atomic<bool> working = false;
+std::atomic<bool> gameInProgress{true};
+std::atomic<bool> moveFound{false};
+std::atomic<bool> working{false};
 bool hasData = false;
 sf::Text endGameText;
 

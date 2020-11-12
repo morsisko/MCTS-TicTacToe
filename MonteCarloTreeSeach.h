@@ -1,7 +1,7 @@
 #pragma once
 #include "Node.h"
 #include <memory>
-#include <Windows.h>
+#include <chrono>
 
 class MonteCarloTreeSeach
 {

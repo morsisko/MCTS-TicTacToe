@@ -40,6 +40,11 @@ MonteCarloTreeSeach::MonteCarloTreeSeach()
 Move MonteCarloTreeSeach::findBestMoveFor(GameState* gameState)
 {
 	root = std::make_unique<Node>(*gameState);
+	auto GetTickCount = []() -> unsigned long long
+	{
+		using namespace std::chrono;
+		return duration_cast<milliseconds>(steady_clock::now().time_since_epoch()).count();
+	};
 
 	int start = GetTickCount();
 
